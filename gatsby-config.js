@@ -6,6 +6,7 @@ module.exports = {
   plugins: [
     "gatsby-plugin-gatsby-cloud",
     "gatsby-plugin-image",
+    "gatsby-plugin-sass",
     {
       resolve: "gatsby-plugin-google-analytics",
       options: {
