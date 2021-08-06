@@ -3,7 +3,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 const LeftContainer = () => {
     return (
-        <StaticImage src={"../images/prathamesh.JPG"} alt="Prathamesh Profile Picture" />
+        <StaticImage src={"../../images/prathamesh.jpg"} alt="Prathamesh Profile Picture" />
     )
 }
 

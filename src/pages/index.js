@@ -2,6 +2,7 @@ import * as React from "react"
 import HeaderNavBar from "../components/header-navbar"
 import LeftContainer from "../components/left-container"
 import InformationContainer from "../components/right-container"
+import SharingComponent from "../components/sharing-container"
 import '../css/global.scss'
 
 const IndexPage = () => {
@@ -12,6 +13,7 @@ const IndexPage = () => {
       </div>
       <div className="right-container">
         <InformationContainer />
+        <SharingComponent />
       </div>
       <HeaderNavBar />
     </div>
