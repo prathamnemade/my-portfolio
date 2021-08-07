@@ -7,7 +7,7 @@ const InformationContainer = () => {
             <div className="normal-tag-one">&lt;html&gt;</div>
             <div className="normal-tag-one">&lt;head&gt;</div>
             <div className="normal-tag-one">&lt;title&gt;
-                <div className="hello-text">&nbsp;&nbsp;Hello !!&nbsp;&nbsp;</div>&lt;/title&gt;
+                <div className="hello-text">&nbsp;Hello!!&nbsp;</div>&lt;/title&gt;
             </div>
             <div className="normal-tag-one">
                 <div>&lt;script type="

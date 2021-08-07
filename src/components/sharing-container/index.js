@@ -17,7 +17,7 @@ const SharingComponent = () => {
         <div className="sharing-container">
             {OPTIONS && OPTIONS.map((option, index) =>
                 <SocialMediaIconsReact key={'icon' + index}
-                    borderColor="#58595b"
+                    borderColor="#c2cad7"
                     icon={option.icon}
                     iconColor="#58595b"
                     backgroundColor="#FFF"
