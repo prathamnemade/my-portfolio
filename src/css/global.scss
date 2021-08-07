@@ -163,87 +163,6 @@ body {
                 text-align: center;
                 color: #f94c57;
             }
-            // .greeting-box {
-            //     width: 50%;
-            //     display: flex;
-            //     justify-content: space-around;
-            //     // align-items: center;
-            //     flex-direction: column;
-            //     @media (max-width: 992px) {
-            //         width: 100%;
-            //         align-items: center;
-            //         justify-content: center;
-            //     }
-            //     .hello-text {
-            //         font-family: "SF-Pro";
-            //         font-weight: 800;
-            //         font-size: 6.3rem;
-            //         line-height: 6.35rem;
-            //         margin-bottom: 50px;
-            //         letter-spacing: -0.3rem;
-            //     }
-            //     .typewritter-container {
-            //         font-family: "SF-Pro";
-            //         font-weight: 500;
-            //         font-size: 1.2rem;
-            //         line-height: 1.25rem;
-            //         margin: 30px 0;
-            //         letter-spacing: 0.1rem;
-            //     }
-            //     .basic-container {
-            //         font-family: "SF-Pro";
-            //         font-weight: 500;
-            //         font-size: 2rem;
-            //         line-height: 2.1rem;
-            //     }
-            //     .name-container {
-            //         font-family: "SF-Pro";
-            //         font-weight: 800;
-            //         font-size: 2.8rem;
-            //         line-height: 2.85rem;
-            //     }
-            // }
-            // .description-box {
-            //     width: 50%;
-            //     height: 100%;
-            //     display: flex;
-            //     flex-direction: column;
-            //     align-items: center;
-            //     text-align: center;
-            //     justify-content: center;
-            //     margin: 100px 0;
-            //     @media (max-width: 992px) {
-            //         width: 100%;
-            //     }
-            //     .who-am-i {
-            //         font-family: "SF-Pro";
-            //         font-weight: 300;
-            //         font-size: 2rem;
-            //         line-height: 2.25rem;
-            //         @media (max-width: 992px) {
-            //             width: 100%;
-            //         }
-            //         b {
-            //             font-weight: 700;
-            //             font-size: 2.3rem;
-            //             line-height: 2.35rem;
-            //         }
-            //     }
-            //     .about-info {
-            //         font-family: "SF-Pro";
-            //         font-weight: 400;
-            //         font-size: 1.5rem;
-            //         line-height: 1.75rem;
-            //         margin-top: 30px;
-            //         text-align: left;
-            //         @media (max-width: 992px) {
-            //             text-align: center;
-            //         }
-            //         b {
-            //             font-weight: 700;
-            //         }
-            //     }
-            // }
         }
     }
 
@@ -309,9 +228,6 @@ body {
                 background: #fff;
                 top: 80px;
                 transition: opacity 0.35s cubic-bezier(0.165, 0.85, 0.45, 1);
-                align-items: center;
-                display: flex;
-                justify-content: center;
             }
         }
         .options-container {
@@ -370,6 +286,7 @@ body {
     font-weight: 800;
     font-size: 1rem;
     display: flex;
+    padding: 0;
     @media (max-width: 992px) {
         flex-direction: column;
         align-items: center;
