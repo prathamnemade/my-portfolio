@@ -12,6 +12,7 @@ const LeftContainer = () => {
             }
         }
   ` )
+    console.log("data==>", data);
     return (
         <StaticImage src={"../../images/prathamesh-profile.jpg"} alt="Prathamesh Profile Picture" />
     )
