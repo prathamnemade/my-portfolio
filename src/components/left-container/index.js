@@ -5,7 +5,7 @@ import { useStaticQuery, graphql } from "gatsby"
 const LeftContainer = () => {
     const data = useStaticQuery(graphql`
         query Banner {
-            file(relativePath: {eq: "prathamesh.jpg"}) {
+            file(relativePath: {eq: "prathamesh-profile.jpg"}) {
                 childImageSharp {
                     gatsbyImageData
                 }
@@ -13,7 +13,7 @@ const LeftContainer = () => {
         }
   ` )
     return (
-        <StaticImage src={"../../images/prathamesh.jpg"} alt="Prathamesh Profile Picture" />
+        <StaticImage src={"../../images/prathamesh-profile.jpg"} alt="Prathamesh Profile Picture" />
     )
 }
 
