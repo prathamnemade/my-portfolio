@@ -13,7 +13,7 @@ const LeftContainer = () => {
         }
   ` )
     return (
-        <GatsbyImage image={getImage(data.file.childImageSharp.gatsbyImageData)} alt="Prathamesh Profile Picture" />
+        <GatsbyImage image={getImage(data.file)} alt="Prathamesh Profile Picture" />
     )
 }
 
