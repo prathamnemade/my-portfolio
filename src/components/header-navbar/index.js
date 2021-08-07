@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { StaticImage } from "gatsby-plugin-image"
+import { Spin as Hamburger } from 'hamburger-react'
 
 const HeaderNavBar = () => {
+    const [isOpen, setOpen] = useState(false)
+
     return (
         <header className="header-container">
             <div className="name-container">
@@ -16,7 +19,12 @@ const HeaderNavBar = () => {
                     rel="noreferrer" className="download-CV" target="_blank" download>DOWNLOAD CV</a>
             </div>
             <div className="options-hamburger">
-                
+                <Hamburger toggled={isOpen} toggle={setOpen} size={30} />
+                {isOpen && <div className="header-slider">
+                    <div className="top-menu">
+                        dffdf
+                    </div>
+                </div>}
             </div>
         </header>
     )
