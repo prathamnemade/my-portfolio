@@ -1,5 +1,5 @@
 import * as React from "react"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { GatsbyImage, getImage, StaticImage } from "gatsby-plugin-image"
 import { useStaticQuery, graphql } from "gatsby"
 
 const LeftContainer = () => {
@@ -13,7 +13,7 @@ const LeftContainer = () => {
         }
   ` )
     return (
-        <GatsbyImage image={getImage(data.file)} alt="Prathamesh Profile Picture" />
+        <StaticImage src={"../../images/prathamesh.jpg"} alt="Prathamesh Profile Picture" />
     )
 }
 
