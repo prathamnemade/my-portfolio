@@ -291,12 +291,21 @@ body {
                 line-height: 1.05rem;
             }
         }
+        .options-hamburger {
+            display: none;
+            @media (max-width: 992px) {
+                display: block;
+            }
+        }
         .options-container {
             height: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
             padding-right: 10px;
+            @media (max-width: 992px) {
+                display: none;
+            }
             .download-CV {
                 padding: 0 35px;
                 position: relative;
