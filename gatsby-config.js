@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
-    title: "My Portfolio",
+    title: "Prathamesh Nemade",
   },
   plugins: [
     "gatsby-plugin-gatsby-cloud",
@@ -18,6 +18,7 @@ module.exports = {
     "gatsby-plugin-mdx",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
+    "gatsby-transformer-remark",
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -33,6 +34,14 @@ module.exports = {
         path: "./src/pages/",
       },
       __key: "pages",
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "settings",
+        path: "./src/settings/",
+      },
+      __key: "settings",
     },
   ],
 };
