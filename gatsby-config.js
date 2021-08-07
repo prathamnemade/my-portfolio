@@ -3,6 +3,7 @@ module.exports = {
     siteUrl: "https://www.yourdomain.tld",
     title: "My Portfolio",
   },
+  pathPrefix: '/my-portfolio',
   plugins: [
     "gatsby-plugin-gatsby-cloud",
     "gatsby-plugin-image",
