@@ -1,5 +1,6 @@
 import React from 'react'
 import HomeSection from './home-section'
+import './style.scss'
 
 const InformationContainer = () => {
     return (

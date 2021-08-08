@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { StaticImage } from "gatsby-plugin-image"
 import { Spin as Hamburger } from 'hamburger-react'
 import { graphql, useStaticQuery } from 'gatsby'
+import './style.scss'
 
 const HeaderNavBar = () => {
     const data = useStaticQuery(graphql`
@@ -21,9 +22,24 @@ const HeaderNavBar = () => {
             }
         }
   ` )
+
     const [isOpen, setOpen] = useState(false)
     const menuOptions = data?.allMarkdownRemark?.edges[0]?.node?.frontmatter?.options
     const [selected, setSelected] = useState(menuOptions[0].name)
+
+    const _clickHandler = (option) => {
+        setOpen(false);
+        setSelected(option.name)
+    }
+
+    const _getList = () => <ul className="option-menu">
+        {menuOptions &&
+            menuOptions.map((option, index) =>
+                <li role="presentation" key={'menu2' + index} className={selected === option.name ? "current" : ""} onClick={() => _clickHandler(option)}>
+                    <a href={option.slug} data-hover={option.name}>{option.name}</a>
+                </li>
+            )}
+    </ul>
 
     return (
         <header className="header-container">
@@ -37,28 +53,14 @@ const HeaderNavBar = () => {
                 </div>
             </div>
             <div className="options-container">
-                <ul className="option-menu">
-                    {menuOptions &&
-                        menuOptions.map((option, index) =>
-                            <li key={'menu' + index} className={selected !== option.name || "current"} onClick={() => { setOpen(false); setSelected(option.name) }}>
-                                <a href="#" data-hover={option.name}>{option.name}</a>
-                            </li>
-                        )}
-                </ul>
+                {_getList()}
                 <a href="https://media-exp1.licdn.com/dms/document/C4D2DAQHGCrPwlSUIIg/profile-treasury-document-pdf-analyzed/0/1628162692146?e=1628366400&v=beta&t=uwNeBZ7-eyURyq1YqBcWT3UtX81bhAJmCnqSirVOKbM"
                     rel="noreferrer" className="download-CV" target="_blank" download>DOWNLOAD CV</a>
             </div>
             <div className="options-hamburger">
                 <Hamburger toggled={isOpen} toggle={setOpen} size={20} color="#58595b" />
                 {isOpen && <div className="header-slider">
-                    <ul className="option-menu">
-                        {menuOptions &&
-                            menuOptions.map((option, index) =>
-                                <li key={'menu' + index} className={selected !== option.name || "current"} onClick={() => { setOpen(false); setSelected(option.name) }}>
-                                    <a href="#" data-hover={option.name}>{option.name}</a>
-                                </li>
-                            )}
-                    </ul>
+                    {_getList()}
                 </div>}
             </div>
         </header>

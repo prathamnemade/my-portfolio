@@ -1,6 +1,6 @@
 import React from 'react'
 import { SocialMediaIconsReact } from 'social-media-icons-react';
-
+import './style.scss'
 
 const OPTIONS = [
     { name: "Facebook", icon: "facebook" },
