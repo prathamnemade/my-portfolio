@@ -36,7 +36,7 @@ const InformationContainer = () => {
                                 .typeString('PROGRAMMER.')
                                 .pauseFor(1500)
                                 .deleteAll()
-                                .typeString('CONSULTANT.')
+                                .typeString('CONSULTANT AND MENTOR.')
                                 .pauseFor(1500)
                                 .deleteAll()
                                 .typeString('FREELANCER.')

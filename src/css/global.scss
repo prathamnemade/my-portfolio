@@ -1,17 +1,16 @@
 @import "./_fonts.css";
-
 html,
 body {
     height: 100%;
     margin: 0;
     color: #121212;
 }
-
 ::-webkit-scrollbar {
-    width: 0; /* Remove scrollbar space */
-    background: transparent; /* Optional: just make scrollbar invisible */
+    width: 0;
+    /* Remove scrollbar space */
+    background: transparent;
+    /* Optional: just make scrollbar invisible */
 }
-
 .main-container {
     width: 100%;
     min-height: 100vh;
@@ -60,7 +59,6 @@ body {
             min-height: auto;
             display: block;
         }
-
         .sharing-container {
             width: 70px;
             border-left: 1px solid #e0e1e2;
@@ -80,7 +78,6 @@ body {
                 align-items: center;
             }
         }
-
         .information-box {
             overflow: scroll;
             width: calc(100% - 70px);
@@ -95,7 +92,6 @@ body {
                 width: auto;
                 padding: 40px 20px;
             }
-
             .normal-tag-one {
                 font-family: "Caveat";
                 font-weight: 100;
@@ -105,7 +101,6 @@ body {
                 align-items: center;
                 color: #c2cad7;
             }
-
             .description-tag-text {
                 font-family: "Caveat";
                 font-weight: 300;
@@ -113,7 +108,6 @@ body {
                 line-height: 2.15rem;
                 color: #262728;
             }
-
             .hello-text {
                 font-family: "SF-Pro";
                 font-weight: 800;
@@ -122,7 +116,6 @@ body {
                 letter-spacing: -0.3rem;
                 color: #fc3c44;
             }
-
             .who-am-i {
                 font-family: "Caveat";
                 font-weight: 400;
@@ -138,7 +131,6 @@ body {
                     color: #58595b;
                 }
             }
-
             .typewritter-container {
                 font-family: "SF-Pro";
                 font-weight: 900;
@@ -147,7 +139,6 @@ body {
                 letter-spacing: 0.1rem;
                 color: #0080ff;
             }
-
             .basic-container {
                 font-family: "Caveat";
                 font-weight: 500;
@@ -165,7 +156,6 @@ body {
             }
         }
     }
-
     .header-container {
         position: fixed;
         left: 50px;
@@ -191,7 +181,6 @@ body {
             -moz-border-radius: 0;
             -webkit-border-radius: 0;
         }
-
         .name-container {
             display: flex;
             justify-content: center;
@@ -252,7 +241,7 @@ body {
                 text-transform: uppercase;
                 background: transparent;
                 outline: none;
-                border: 1px solid #0080ff;
+                border: 1px solid #fff;
                 cursor: pointer;
                 border-radius: 64px;
                 -moz-border-radius: 64px;
@@ -280,13 +269,12 @@ body {
         }
     }
 }
-
 .option-menu {
     font-family: "SF-Pro";
     text-align: center;
     text-transform: uppercase;
     font-weight: 800;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     display: flex;
     padding: 0;
     @media (max-width: 992px) {
@@ -327,7 +315,7 @@ body {
 .option-menu a:after {
     left: 0;
     top: 0;
-    padding: 0.5em 0;
+    padding: 0.45em 0;
     position: absolute;
     content: attr(data-hover);
     color: #121212;

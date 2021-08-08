@@ -14,7 +14,7 @@ const LeftContainer = () => {
   ` )
 
     return (
-        <GatsbyImage image={getImage(data.file)} alt="Developers Image"/>
+        <GatsbyImage image={getImage(data.file)} alt="Developers Image" />
     )
 }
 
