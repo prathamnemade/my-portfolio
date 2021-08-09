@@ -3,13 +3,15 @@ import { SocialMediaIconsReact } from 'social-media-icons-react';
 import './style.scss'
 
 const OPTIONS = [
-    { name: "Facebook", icon: "facebook" },
-    { name: "Instagram", icon: "instagram" },
-    { name: "Snapchat", icon: "snapchat" },
-    { name: "GitHub", icon: "github" },
-    { name: "LinkedIn", icon: "linkedin" },
-    { name: "Medium", icon: "medium" },
-    { name: "Mail", icon: "mail" },
+    { name: "Facebook", icon: "facebook", url: "https://www.facebook.com/prathamesh.nemade.9" },
+    { name: "Instagram", icon: "instagram", url: "https://www.instagram.com/itsprathameshsfault/" },
+    {
+        name: "Snapchat", icon: "snapchat", url: "https://www.snapchat.com/add/prathamn?share_id=RTBCMjU5&locale=en_IN"
+    },
+    { name: "GitHub", icon: "github", url: "https://github.com/prathamnemade" },
+    { name: "LinkedIn", icon: "linkedin", url: "https://www.linkedin.com/in/prathamesh-nemade/" },
+    { name: "Medium", icon: "medium", url: "https://prathameshnemade.medium.com/about" },
+    { name: "Mail", icon: "mail", url: "mailto:prathameshnemade95@gmail.com" },
 ]
 
 const SharingComponent = () => {
@@ -24,7 +26,8 @@ const SharingComponent = () => {
                     iconSize={"0"}
                     backgroundColor="#FFF"
                     roundness="50%"
-                    size="30" />
+                    size="30"
+                    url={option.url} />
             )}
         </div>
     )
