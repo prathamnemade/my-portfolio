@@ -80,7 +80,7 @@ const ContactSection = () => {
         <div className="heading">CONTACT</div>
         <div className="question-pattern">
             {enterInput && enterInput.map((line, index) =>
-                <AskQuestion key={'line' + index} {...{ index }} isDisabled={index < indexQuestion} {...{ line }} {...{ _changeHandler }} {...{ _enterHandler }} />
+                <AskQuestion key={'line' + index} isDisabled={index < indexQuestion} {...{ line }} {...{ _changeHandler }} {...{ _enterHandler }} />
             )}
         </div>
     </div>

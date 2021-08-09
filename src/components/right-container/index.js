@@ -2,6 +2,7 @@ import React from 'react'
 import AboutSection from './about-section'
 import ContactSection from './contact-section'
 import HomeSection from './home-section'
+import PortfolioSection from './portfolio-section'
 import './style.scss'
 
 const InformationContainer = () => {
@@ -9,7 +10,8 @@ const InformationContainer = () => {
         <div className="information-box">
             <HomeSection />
             <AboutSection />
-            <ContactSection/>
+            <PortfolioSection />
+            <ContactSection />
         </div>
     )
 }

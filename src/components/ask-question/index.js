@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Typewriter from 'typewriter-effect';
 import './style.scss'
 
-const AskQuestion = ({ line, key, _changeHandler, _enterHandler, isDisabled, index }) => {
+const AskQuestion = ({ line, key, _changeHandler, _enterHandler, isDisabled }) => {
     const [show, setShow] = useState(false)
 
     return (
@@ -25,7 +25,7 @@ const AskQuestion = ({ line, key, _changeHandler, _enterHandler, isDisabled, ind
                         .start();
                 }}
             />
-            {(show && !line.acknowledge) && <input type={line.type} placeholder="Enter here" autoFocus={index !== 0} disabled={isDisabled} onChange={(event) => _changeHandler(event)} name={line.value} onKeyUp={_enterHandler} />}
+            {(show && !line.acknowledge) && <input type={line.type} placeholder="Enter here" disabled={isDisabled} onChange={(event) => _changeHandler(event)} name={line.value} onKeyUp={_enterHandler} />}
         </div>
     )
 }
