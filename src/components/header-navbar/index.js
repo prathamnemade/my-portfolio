@@ -32,11 +32,17 @@ const HeaderNavBar = () => {
         setSelected(option.name)
     }
 
+    const _handleScroll = (id) => {
+        const titleElement = document.getElementById(id)
+        titleElement.scrollIntoView({ behavior: 'smooth' })
+        return false
+    }
+
     const _getList = () => <ul className="option-menu">
         {menuOptions &&
             menuOptions.map((option, index) =>
                 <li role="presentation" key={'menu2' + index} className={selected === option.name ? "current" : ""} onClick={() => _clickHandler(option)}>
-                    <a href={option.slug} data-hover={option.name}>{option.name}</a>
+                    <a href={() => false} onClick={() => _handleScroll(option.slug)} data-hover={option.name}>{option.name}</a>
                 </li>
             )}
     </ul>

@@ -39,8 +39,8 @@
         div {
             font-family: "SF-Pro";
             font-weight: 900;
-            font-size: 1rem;
-            line-height: 1.05rem;
+            font-size: 0.9rem;
+            line-height: 1.25rem;
         }
     }
     .options-hamburger {
@@ -96,8 +96,8 @@
             color: #fff;
             font-family: "SF-Pro";
             font-weight: 900;
-            font-size: 0.9rem;
-            line-height: 1.15rem;
+            font-size: 0.8rem;
+            line-height: 0.9rem;
             align-items: center;
             justify-content: center;
             display: flex;
@@ -116,7 +116,7 @@
     text-align: center;
     text-transform: uppercase;
     font-weight: 800;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     display: flex;
     padding: 0;
     @media (max-width: 992px) {
@@ -140,6 +140,11 @@
     letter-spacing: 1px;
     text-decoration: none;
 }
+
+.option-menu a:hover {
+    cursor: pointer;
+}
+
 .option-menu a:before,
 .option-menu a:after {
     position: absolute;
@@ -156,7 +161,7 @@
 }
 .option-menu a:after {
     left: 0;
-    top: 0;
+    top: 1px;
     padding: 0.45em 0;
     position: absolute;
     content: attr(data-hover);
