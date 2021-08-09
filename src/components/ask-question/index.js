@@ -1,24 +1,31 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
+import Typewriter from 'typewriter-effect';
 import './style.scss'
 
-const AskQuestion = ({ line, key, _changeHandler, _enterHandler, isDisabled }) => {
+const AskQuestion = ({ line, key, _changeHandler, _enterHandler, isDisabled, index }) => {
     const [show, setShow] = useState(false)
-
-    useEffect(() => {
-        setTimeout(() => {
-            setShow(true)
-        }, 3500);
-    }, [])
 
     return (
         <div key={key} className="question-line">
             <div
                 dangerouslySetInnerHTML={{ __html: line.path }}
             />
-            <div className="typewriter">
-                <p>{line?.question}</p>
-            </div>
-            {show && <input placeholder="Enter here" disabled={isDisabled} onChange={(event) => _changeHandler(event)} name={line.value} onKeyUp={_enterHandler} />}
+            <Typewriter
+                options={{
+                    autoStart: true,
+                    delay: 75,
+                }}
+                onInit={(typewriter) => {
+                    typewriter
+                        .typeString(line?.question)
+                        .pauseFor(500)
+                        .callFunction(() => {
+                            setShow(true)
+                        })
+                        .start();
+                }}
+            />
+            {(show && !line.acknowledge) && <input type={line.type} placeholder="Enter here" autoFocus={index !== 0} disabled={isDisabled} onChange={(event) => _changeHandler(event)} name={line.value} onKeyUp={_enterHandler} />}
         </div>
     )
 }
