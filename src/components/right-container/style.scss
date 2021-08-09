@@ -16,7 +16,7 @@
         max-height: auto;
         padding: 20px 40px;
         @media (max-width: 992px) {
-            padding: 20px;
+            padding: 20px 10px;
         }
     }
     .home-section {
@@ -111,5 +111,95 @@
         font-size: 1rem;
         line-height: 1.35rem;
         color: #585858;
+    }
+    #contact-section {
+        .question-pattern {
+            display: flex;
+            flex-direction: column;
+            div {
+                display: flex;
+                flex-wrap: wrap;
+                font-family: monospace;
+                font-size: 1.5rem;
+                letter-spacing: 0.1rem;
+                @media (max-width: 992px) {
+                    font-size: 1.2rem;
+                    letter-spacing: 0.07rem;
+                }
+                input {
+                    border: none;
+                    font-family: monospace;
+                    font-size: 1.5rem;
+                    letter-spacing: 0.1rem;
+                    @media (max-width: 992px) {
+                        font-size: 1.2rem;
+                        letter-spacing: 0.07rem;
+                    }
+                }
+                input:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+}
+
+.Cur_Input_Line {
+    position: relative;
+    width: 100%;
+    height: 10%;
+    /* border: 1px solid white; */
+    font-size: 20px;
+}
+span {
+    font-family: monospace;
+    font-weight: 700;
+}
+.Ter_Green {
+    color: chartreuse;
+}
+.Ter_Blue {
+    color: cyan;
+}
+.Ter_Gray {
+    color: rgb(167, 166, 166);
+}
+
+input {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: monospace;
+
+    border: none;
+    border-color: transparent;
+    background-color: rgb(0, 0, 0);
+    width: 75%;
+}
+input:focus {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: monospace;
+
+    border: none;
+    border-color: transparent;
+    outline: none;
+    background-color: rgb(0, 0, 0);
+
+    width: 75%;
+    caret-color: #000;
+}
+
+.Ter_Input {
+    width: 75%;
+}
+
+@keyframes Blink_Ani {
+    from {
+        background-color: #000;
+    }
+    to {
+        background-color: #fff;
     }
 }
