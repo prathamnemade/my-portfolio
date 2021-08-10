@@ -100,8 +100,8 @@
     .heading {
         font-family: "SF-Pro";
         font-weight: 800;
-        font-size: 1.4rem;
-        line-height: 1.45rem;
+        font-size: 2.0rem;
+        line-height: 2.05rem;
         color: #fc3c44;
         margin-bottom: 30px;
     }
@@ -170,7 +170,6 @@ input {
     font-size: 20px;
     font-weight: 700;
     font-family: monospace;
-
     border: none;
     border-color: transparent;
     background-color: rgb(0, 0, 0);
@@ -201,5 +200,31 @@ input:focus {
     }
     to {
         background-color: #fff;
+    }
+}
+
+.information {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px 0;
+    font-family: "SF-Pro";
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.05rem;
+    color: #58595b;
+    div{
+        margin: 10px 0;
+    }
+    b {
+        font-family: "SF-Pro";
+        font-weight: 800;
+        font-size: 1rem;
+        line-height: 1.05rem;
+        color: #0080ff;
+    }
+    @media (max-width: 992px) {
+        flex-direction: column;
     }
 }
