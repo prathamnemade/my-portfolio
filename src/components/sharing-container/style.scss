@@ -9,7 +9,7 @@
         margin: 5px;
     }
     @media (max-width: 992px) {
-        width: 100%;
+        width: -webkit-fill-available;
         height: 60px;
         border-top: 1px solid #e0e1e2;
         flex-direction: row;

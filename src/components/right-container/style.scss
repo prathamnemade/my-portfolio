@@ -6,7 +6,7 @@
     max-height: 100vh;
     @media (max-width: 992px) {
         overflow: initial;
-        width: auto;
+        width: -webkit-fill-available;
         padding: 40px 20px;
         min-height: fit-content;
         max-height: fit-content;
