@@ -1,6 +1,6 @@
 ---
 title: TATA ClassEdge
-stack: Nx-Angular, JAVA, MySQL
+stack: [Nx-Angular, JAVA, MySQL]
 date: 2019-06-01T00:00:00+00:00
 link: https://www.tataclassedge.com/
 thumb: ../images/tata.png

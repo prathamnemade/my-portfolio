@@ -1,6 +1,6 @@
 ---
 title: Joe Coffee Company
-stack:  Angular JS - PWA, HTML, CSS, SASS
+stack:  [Angular JS - PWA, HTML, CSS, SASS]
 date: 2020-01-01T00:00:00+00:00
 link: https://joe.coffee/
 thumb: ../images/joe.png

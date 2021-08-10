@@ -1,6 +1,6 @@
 ---
 title: Book Covid-19 Vaccination Slots
-stack: React, Node
+stack: [React, Node]
 date: 2021-05-01T00:00:00+00:00
 link: https://chrome.google.com/webstore/detail/book-covid-19-vaccination/nbihfiblmebjoppccegmiopkipcknedo?hl=en
 thumb: .../images/covid.jpg

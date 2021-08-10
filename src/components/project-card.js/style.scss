@@ -43,14 +43,15 @@
     background: #fc6e51;
     text-decoration: none;
     color: white;
-    font-size: 16px;
+    font-size: 10px;
     letter-spacing: 0.08em;
     text-transform: uppercase;
     position: relative;
     transition: background-color 0.6s ease;
     overflow: hidden;
-    border-radius: 30px;
-    padding: 15px 30px;
+    border-radius: 15px;
+    padding: 7px 15px;
+    margin: 20px 0;
     &:after {
         content: "";
         position: absolute;

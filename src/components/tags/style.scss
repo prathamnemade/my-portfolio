@@ -1,0 +1,30 @@
+.language-details {
+    display: flex;
+    width: 60%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0 0 0;
+    font-size: 1rem;
+    .round-button {
+        height: 31px;
+        padding: 0 20px;
+        border-radius: 200px;
+        border: 0;
+        margin: 5px;
+        font-family: var(--hubscotch-libre-franklin);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 0.6em;
+        line-height: 12px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        cursor: none;
+        &:hover {
+            cursor: auto;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+}

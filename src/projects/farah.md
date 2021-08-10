@@ -1,6 +1,6 @@
 ---
 title: Farah
-stack:  Angular JS, JAVA, MySQL, HTML, CSS
+stack:  [Angular JS, JAVA, MySQL, HTML, CSS]
 date: 2021-07-01T00:00:00+00:00
 link: 
 thumb: ../images/farah.jpg

@@ -1,6 +1,6 @@
 ---
 title: CollegeHunch
-stack:  Angular JS, JAVA, MySQL, HTML, CSS
+stack:  [Angular JS, JAVA, MySQL, HTML, CSS]
 date: 2019-11-01T00:00:00+00:00
 link: https://www.collegehunch.com/
 thumb: ../images/collegehunch.png

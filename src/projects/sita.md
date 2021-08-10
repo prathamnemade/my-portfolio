@@ -1,6 +1,6 @@
 ---
 title: SITA
-stack: React, React Native, Nx Monorepo, HTML, CSS, SASS
+stack: [React, React Native, Nx Monorepo, HTML, CSS, SASS]
 date: 2021-07-01T00:00:00+00:00
 link: https://www.sita.in/
 thumb: ../images/sita.png

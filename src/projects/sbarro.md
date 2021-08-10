@@ -1,6 +1,6 @@
 ---
 title: Sbarro Pizza
-stack: Node, Express, EJS, MongoDB, HTML, CSS
+stack: [Node, Express, EJS, MongoDB, HTML, CSS]
 date: 2019-12-01T00:00:00+00:00
 link: https://sbarroindia.com/
 thumb: ../images/sbarro.png

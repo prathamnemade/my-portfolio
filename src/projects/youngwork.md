@@ -1,6 +1,6 @@
 ---
 title: Youngwork
-stack:  React, React Native, Expo, HTML, CSS, SASS, Lerna
+stack:  [React, React Native, Expo, HTML, CSS, SASS, Lerna]
 date: 2021-02-01T00:00:00+00:00
 link: https://youngwork.app/
 thumb: ../images/youngwork.png
