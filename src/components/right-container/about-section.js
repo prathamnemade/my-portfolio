@@ -34,6 +34,9 @@ const AboutSection = () => {
         <div><b>CURRENT LOCATION:</b> Boston, MA</div>
         <div><b>FREELANCE:</b> Available</div>
       </div>
+      <div className="information">
+        <div><b>Contact:</b> +1(857)-318-6354</div>
+      </div>
     </div>)
 }
 
