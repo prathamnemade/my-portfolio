@@ -60,8 +60,8 @@ const HeaderNavBar = () => {
             </div>
             <div className="options-container">
                 {_getList()}
-                <a href="https://media-exp1.licdn.com/dms/document/C4D2DAQHGCrPwlSUIIg/profile-treasury-document-pdf-analyzed/0/1628162692146?e=1628366400&v=beta&t=uwNeBZ7-eyURyq1YqBcWT3UtX81bhAJmCnqSirVOKbM"
-                    rel="noreferrer" className="download-CV" target="_blank" download>DOWNLOAD CV</a>
+                <a href="https://media-exp1.licdn.com/dms/document/C4D2DAQFh6my8jKHDqw/profile-treasury-document-pdf-analyzed/0/1635709815481?e=1635796800&v=beta&t=_j3yORD9lrNZLqDh9lMyLASMtTg0P9bCUo_0SGwOTc0"
+                    rel="noreferrer" className="DOWNLOAD-CV" target="_blank" download>DOWNLOAD CV</a>
             </div>
             <div className="options-hamburger">
                 <Hamburger toggled={isOpen} toggle={setOpen} size={20} color="#58595b" />
