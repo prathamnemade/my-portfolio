@@ -4,6 +4,18 @@ module.exports = {
     title: "Prathamesh Nemade",
   },
   plugins: [
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        name: 'Prathamesh Nemade',
+        short_name: 'Portfolio',
+        start_url: '/',
+        background_color: '#f7f0eb',
+        theme_color: '#a2466c',
+        display: 'standalone',
+        icon: 'src/images/prathamesh-icon.jpg',
+      },
+    },
     "gatsby-plugin-gatsby-cloud",
     "gatsby-plugin-image",
     "gatsby-plugin-sass",
