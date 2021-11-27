@@ -9,7 +9,7 @@ const OPTIONS = [
         name: "Snapchat", icon: "snapchat", url: "https://www.snapchat.com/add/prathamn?share_id=RTBCMjU5&locale=en_IN"
     },
     { name: "GitHub", icon: "github", url: "https://github.com/prathamnemade" },
-    { name: "LinkedIn", icon: "linkedin", url: "https://www.linkedin.com/in/prathamesh-nemade/" },
+    { name: "LinkedIn", icon: "linkedin", url: "https://www.linkedin.com/in/prathamnemade/" },
     { name: "Medium", icon: "medium", url: "https://prathameshnemade.medium.com/about" },
     { name: "Mail", icon: "mail", url: "mailto:prathameshnemade95@gmail.com" },
 ]
