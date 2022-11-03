@@ -60,7 +60,7 @@ const HeaderNavBar = () => {
             </div>
             <div className="options-container">
                 {_getList()}
-                <a href="https://media-exp1.licdn.com/dms/document/C4D2DAQFh6my8jKHDqw/profile-treasury-document-pdf-analyzed/0/1635709815481?e=1635796800&v=beta&t=_j3yORD9lrNZLqDh9lMyLASMtTg0P9bCUo_0SGwOTc0"
+                <a href="https://media-exp1.licdn.com/dms/document/C562DAQH6DsyaFYBNwQ/profile-treasury-document-pdf-analyzed/0/1657293979538?e=1668643200&v=beta&t=u0iDRA_v9w8xdJJXBu2bO_G36vHMwAui-t8nmjkEcXo"
                     rel="noreferrer" className="download-CV" target="_blank" download>DOWNLOAD CV</a>
             </div>
             <div className="options-hamburger">
