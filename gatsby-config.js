@@ -1,6 +1,8 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://friendly-dijkstra-a75b54.netlify.app/",
+    description: "Prathamesh's Porfolio",
+    image: "src/images/prathamesh-icon.jpg",
+    siteUrl: "https://prathameshnemade.com/",
     title: "Prathamesh Nemade",
   },
   plugins: [
