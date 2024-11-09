@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     description: "Prathamesh's Porfolio",
-    image: "src/images/prathamesh-icon.jpg",
+    image: "./src/images/prathamesh-icon.jpg",
     siteUrl: "https://prathameshnemade.com/",
     title: "Prathamesh Nemade",
   },
